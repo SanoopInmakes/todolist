@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+
+ <div class="mainupdate shadow">
+      <h4>Update Task Details</h4>
+<div class="update">
+
+    <form class="update_forms" method="POST">
+
+        {% csrf_token %}
+        {{form.as_p}}
+        <div class="row">
+            <div style="width:100%">
+                <input class="btn btn-danger col-md-6" style="width:49%;float:left;" type="submit">
+                <a class="btn btn-primary col-md-6" style="width:49%;float:right;" href="/">Cancel</a><br>
+            </div>
+
+        </div>
+    </form>
+
+</div>
+<br><br>
+</div>
+<br><br><br><br><br><br><br>
+
+{% endblock %}

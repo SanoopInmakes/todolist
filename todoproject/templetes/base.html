@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'basestyleee.css' %}">
+
+</head>
+<body style="background-image:url({% static 'bgm.jpg' %});">
+<div>
+<div class="container-fluid shadow red">
+    <div class="row">
+        <div class="logo" ><a href="/"> ToDo</a></div>
+        <div class="col-md-12">
+            <div class="banner">
+
+                <ul class="menu-options col-md-6">
+<!--                    <li><a href="/admin">Admin</a></li>-->
+                    <li>Contact US : 000055221</li>
+
+
+                </ul>
+
+        </div>
+    </div>
+    </div></div>
+</div>
+
+
+<!-- Image and text -->
+<!--<nav class="navbar navbar-dark bg-dark">-->
+<!--  <a class="navbar-brand" href="/">TODO List</a>-->
+<!--  <a class="navbar-brand" href="/add">Add Movie</a>-->
+<!--  <a class="navbar-brand" href="/add">Add Movie</a>-->
+<!--  <a class="navbar-brand" href="/add">Add Movie</a>-->
+<!--  <a class="navbar-brand" href="/add">Add Movie</a>-->
+<!--</nav>-->
+<div class="base_container">
+{% block body %}
+{% endblock %}
+</div>
+</body>
+</html>

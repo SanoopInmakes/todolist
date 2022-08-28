@@ -1,0 +1,112 @@
+
+.base_container{
+
+width:100%
+
+}
+
+.container .mb-3{
+    padding:18px;
+    margin-top:12px;
+}
+.form-group{padding-top:5px;
+
+}
+
+
+.container-fluid{
+    background-color:#aff;
+    height:150px;
+    width:100%;
+    margin-bottom:50px;
+
+}
+
+.logo{
+    font-family: 'Oswald', sans-serif;
+
+	font-size: 65px;
+    line-height:0.75;
+    font-weight: 1400;
+    position:absolute;
+    margin-top:30px;
+    text-align:center;
+
+
+}
+.logo a{
+    text-shadow: 5px 5px white;
+    text-decoration:none;
+    color:inherit;
+    font-size: 80px;
+
+}
+
+.banner ul{
+    text-align:right;
+    float:right;
+    margin-top:50px;
+}
+
+
+
+.banner ul li{
+
+    text-decoration:none;
+    list-style-type:none;
+    color:black;
+    display:inline;
+    padding-top:60px;
+    font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+    line-height:0.75;
+    margin-right:55px;
+
+}
+.banner ul li a{
+    text-decoration:none;
+    color:inherit;
+    font-size: 20px;
+
+    }
+
+
+
+/*edit-style*/
+
+
+.mainupdate{
+width:60%;
+ float:center;
+    margin:auto;
+border:2px solid black;
+}
+.mainupdate h4{text-align:center;
+    padding-top:15px;
+}
+.update{
+    background-color
+    float:center;
+    margin:auto;
+    width:85%;
+    border-radius:10px;
+}
+
+.update input{
+width:100%;
+padding:2%;
+ border-radius:5px;
+}
+.update label{
+width:100%;
+font-size:15px;
+padding:1%;
+border-radius:5px;
+}
+
+.update_forms a{
+width:100%;
+padding:2%;
+ border-radius:5px;
+
+}

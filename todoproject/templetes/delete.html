@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="delete">
+    <form class="delete_forms" method="POST">
+        {% csrf_token %}
+        Are you sure you want to delete this movie ?
+        <input class="btn btn-danger" type="submit">
+        <a class="btn btn-success" href="/">Cancel</a>
+    </form>
+
+</div>
+{% endblock %}

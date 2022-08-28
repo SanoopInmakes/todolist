@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--<div>-->
+<!--<div class="container-fluid shadow red">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-12">-->
+<!--            <div class="banner">-->
+<!--                <div class="row">-->
+<!--                <div class="banner-text col-md-6">-->
+
+<!--                    <div class="logo" ><a href="/"> ToDo</a></div>-->
+<!--                </div>-->
+<!--                <ul class="menu-options col-md-6">-->
+<!--                    <li>Contact US : 000055221</li>-->
+<!--                    <li><a href="/admin">Admin</a></li>-->
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div   >-->
+<!--</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h6>Enter task details</h6>
+        <form method="POST" class="p-3 shadow card" >
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" name="task" class="form-control" placeholder="enter task">
+            </div>
+
+            <div class="form-group">
+                 <input type="text" name="priority"  class="form-control" placeholder="enter priority">
+            </div>
+            <div class="form-group">
+                 <input type="date" name="date" class="form-control" placeholder="enter date"><br>
+            </div>
+              <input type="submit" class="btn btn-success col-md-3">
+
+        </form>
+
+
+
+
+    </div>
+
+           <div class="col-md-6">
+               <h6>Task to be Completed</h6>
+               {% for i in result %}
+               <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="card-title"><b>{{i.name}}</b></label>
+                            </div>
+                            <div class="col-sm-4">
+                                <h5 class="card-title"><b>{{i.priority}}</b></h5>
+
+                                <h5 class="card-title"><b>{{i.date}}</b></h5>
+                            </div>
+<!--                            <div>-->
+<!--                                <a class="btn btn-danger col-md-2" href="{% url 'todoapp:delete' i.id %}">Done</a>-->
+<!--                                <a class="btn btn-success col-md-2" href="{% url 'todoapp:update' i.id %}">Update</a>-->
+<!--                            </div><br><br>-->
+                            <div>
+<!--                                class base call-->
+                                <a class="btn btn-primary col-md-3" href="{% url 'todoapp:cbvdetails' i.id %}">Details</a>
+                                <a class="btn btn-success col-md-3" href="{% url 'todoapp:cbvupdate' i.id %}">Update</a>
+                                <a class="btn btn-danger col-md-3" href="{% url 'todoapp:cbvdelete' i.id %}">Delete</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+               </div><br>
+               {% endfor %}
+            </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

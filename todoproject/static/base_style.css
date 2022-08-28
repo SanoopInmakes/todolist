@@ -1,0 +1,47 @@
+
+.base_container{
+padding-top:40px;
+width:100%
+
+}
+
+.container .mb-3{
+    padding:18px;
+    margin-top:12px;
+}
+.form-group{padding-top:5px;
+
+}
+
+
+.banner{
+    border:2px solid black;
+    background-color:#aff;
+    height:200px;
+    width:100%;
+    margin-bottom:50px;
+
+
+}
+
+.banner-text{
+    text-align:center;
+    margin-top:50px;
+}
+
+.banner ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color:green;
+    display:inline;
+    padding-left:10px;
+    float:right;
+    padding-top:50px;
+
+
+    font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+    line-height:0.75;
+
+	position: relative;
+}
